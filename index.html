@@ -65,8 +65,8 @@ fieldset{width:20px;margin:0px;padding:0px;display:inline}
 <input type=radio name=relz value=0 checked>
 </fieldset>
 <fieldset>
-    <legend>test:3min</legend>
-<input type=radio name=relz value="3">
+    <legend>test:2min</legend>
+<input type=radio name=relz value="2">
 </fieldset>
 <fieldset>
     <legend>30min</legend>
@@ -96,7 +96,7 @@ fieldset{width:20px;margin:0px;padding:0px;display:inline}
 var cival=0
 var civalr=0
 function fsrel(ff){
-if(cival){window.clearInterval()}
+if(civalr){window.clearInterval()}
 if(ff.relz.value>0){
 civalr=window.setInterval(function(){document.getElementById("spiel").src="https://espritgames.com/de/dragonborn/go/"},ff.relz.value*1000*60)
 }
